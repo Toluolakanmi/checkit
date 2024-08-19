@@ -1,0 +1,250 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  place-items: center;
+  background-repeat: no-repeat;
+  background-image: url('C:\Users\GREATWARE\Desktop\CHECKit\checkit\src\assets\checkitbg.jpg');
+  background-position: center;
+  background-size: cover;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+.NavBarWrapper {
+  background-color: #095e64;
+}
+
+.navBar .Logo, .navBar .navLinks, .navBar .MenuIcon {
+  color: white
+}
+
+.navBar .navLinks a {
+  border-right: 1px solid white;
+  padding-right: 20px;
+}
+
+.navBar .navLinks a:last-child {
+  border: none;
+  padding-right: none;
+}
+
+.Bar {
+  background-color: #095e64;
+}
+
+/* BreadCrumbs */
+  
+  .breadcrumbs > *  {
+  display: inline-block;
+  margin-right: 15px;
+  }
+  
+  .breadcrumbs  .crumb:after{
+  Content: '|';
+  margin-left: 10px;
+  color: white;
+  }
+  
+  .breadcrumbs  .crumb:last-child:after {
+    display: none;
+  }
+  
+  .breadcrumbs  .crumb a {
+  color:white;
+  } 
+  
+
+/* HomePage */
+.homeHead {
+  background-color: #095e64;
+  color:white;
+}
+
+.option{
+  color:#095e64;
+}
+
+.optionOne, .optionTwo {
+  background-color: #f37422;
+}
+
+/* AdminLogin */
+
+.AdminLogin .LoginForm {
+  background-color: #095e64;
+  color: #095e64;
+}
+
+.AdminBtn {
+  background-color: #f37422;
+}
+
+/* Result */
+.resultText {
+  color:white;
+}
+
+.resultdetails {
+  background-color: #095e64;
+}
+
+/* About */
+.AboutWrapper .About {
+  background-color: #095e64;
+}
+
+/* Help */
+
+.HowToUse, .UseGuide {
+  background-color: #095e64;
+}
+
+.HelpWrapper .navLinksH .HelpBtn, .DrugsRegister {
+  background-color: #095e64;
+}
+
+/* Contact */
+
+.Helpcontact, .UseGuide  {
+  background-color: #10767e;
+}
+
+.Contact .ContactForm {
+  background-color: #095e64;
+  color: #307a59;
+}
+
+.nullRes {
+  background-color: #095e64;
+}
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 770px) {
+
+  /* NavBar */
+
+  .MenuIcon {
+    display: block;
+  }
+
+  .navBar .navLinks {
+    display: none;
+  }
+
+  .navBar {
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  /* HomePage */
+
+ .optionOne, .optionTwo {
+  font-size: 0.8rem;
+  padding-top: 8px;
+  padding-bottom: 8px;
+ }
+
+ /* DrugsReister */
+ .drugDetails, .resultdetails div {
+  flex-direction: column;
+ }
+
+ .resultdetails {
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  gap: 2px;
+
+ }
+
+ .resultdetails p {
+  padding: 0;
+ }
+
+ .resultdetails div {
+  gap:2px;
+  border-top: 1px solid white;
+  padding-top: 8px;
+  margin-top: 8px;
+ }
+ 
+
+ .RegisterForm span, .resultdetails p, 
+ .homeHead, .resultBtn, .UseGuide p, 
+ .Helpcontact, .HelpBtn, .HowToUse,
+ .ContactForm input, .ContactForm textarea, .ContactForm button {
+  font-size: 12px;
+ }
+
+ .homeHead, .resultBtn {
+  width:100%;
+ }
+
+.LoginForm, .HowToUse, .ContactForm  {
+  width: 100%;
+}
+
+.DrugsReg {
+  justify-content: center;
+  width: fit-content;
+}
+
+.DrugsReg .navLinksH a {
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+}
+
+.nullRes {
+  font-size: 0.5rem;
+  text-align: center;
+}
+  
+}
+
+@media only screen and (max-width: 347px) {
+.vstatus {
+  font-size: 0.6rem;
+}
+
+.scanner {
+  font-size: 0.8rem;
+}
+
+.resultBtn {
+  border-radius: 50px;
+}
+
+.optionOne, .verify {
+  border-radius: 12px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.HomePageWrapper {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+}
